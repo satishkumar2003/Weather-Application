@@ -15,7 +15,7 @@ def get_weather(city):
             mn = main['temp_min']
             mx =main['temp_max']
             
-            result = 'Temperature: %s Celsius\n Description: %s\n Minimum Temperature: %s Celsius\n Maximum Temperature: %s Celsius\n' % (temp,desc,mn,mx)
+            result = 'Temperature: %s Celsius\n Description: %s\n Minimum Temperature: %s C\n Maximum Temperature: %s C\n' % (temp,desc,mn,mx)
             
             label['text'] = result
             
