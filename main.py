@@ -4,7 +4,7 @@ import tkinter as tk
 
 def get_weather(city):
     API="fe91480ac0c6713160d8786a95188909"
-    URL= "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+API
+    URL= "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+API
     try:
         data = requests.get(URL)
         if data.status_code == 200:
